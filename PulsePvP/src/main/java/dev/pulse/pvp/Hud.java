@@ -1,6 +1,6 @@
 package dev.pulse.pvp;
 
-if (mc.player == null || mc.world == null || mc.options.hudHidden) return;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.font.TextRenderer;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.network.PlayerListEntry;
@@ -37,7 +37,7 @@ public final class Hud {
 
     public static void render(DrawContext ctx, RenderTickCounter tick) {
         MinecraftClient mc = MinecraftClient.getInstance();
-        if (mc.player == null || mc.world == null || mc.options.hudHidden || mc.options.debugEnabled) return;
+        if (mc.player == null || mc.world == null || mc.options.hudHidden) return;
 
         int w = ctx.getScaledWindowWidth();
         int h = ctx.getScaledWindowHeight();
