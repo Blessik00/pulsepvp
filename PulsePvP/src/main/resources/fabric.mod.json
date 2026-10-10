@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "pulsepvp",
+  "version": "${version}",
+  "name": "PulsePvP",
+  "description": "PvP visuals: Target HUD, damage numbers, hit particles, keystrokes + CPS, armor/potion HUD, item counter, combo, info HUD and a clean menu.",
+  "authors": ["you"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.pulse.pvp.PulsePvP"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
