@@ -1,6 +1,6 @@
 package dev.pulse.pvp;
 
-import net.minecraft.client.MinecraftClient;
+if (mc.player == null || mc.world == null || mc.options.hudHidden) return;
 import net.minecraft.client.font.TextRenderer;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.network.PlayerListEntry;
